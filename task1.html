@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Navigation Menu</title>
+  <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div style="padding-top:100px;">
+    <h1 style="text-align:center;">Responsive Landing Page</h1>
+  </div>
+
+  <script>
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+</body>
+</html>
